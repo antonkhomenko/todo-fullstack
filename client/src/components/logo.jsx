@@ -5,10 +5,10 @@ const Logo = ({txt}) => {
   return (
     <a 
       href="#"
-      className="flex items-center gap-x-2 text-white text-2xl font-extrabold"  
+      className="flex items-center gap-x-2 text-white text-2xl font-extrabold lg:text-3xl"  
     >
-      <img src={logoImg} alt="logo-img" className=""/>
-      <span>
+      <img src={logoImg} alt="logo-img" className="lg:h-[30px]"/>
+      <span className='inline-block'>
         {txt}
       </span>
     </a>

@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <div> 
      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0">
-        <div className=' flex flex-col gap-y-5 items-center px-6 sm:px-8 lg:w-1/2 lg:pt-10'>
-          <h1 className="text-4xl sm:text-5xl lg:text-[4rem] font-black text-white">
+        <div className=' flex flex-col gap-y-5 items-center px-6 sm:px-8 lg:w-1/2 lg:pt-12 lg:gap-y-10'>
+          <h1 className="text-4xl sm:text-5xl lg:text-[4.3rem] font-black  text-white">
             Focus on your <span className='text-green-400'>main tasks </span>
             and avoid <span className='text-rose-500'>distractions</span> with the
             <span className='text-sky-400'> ToDoList </span>App
