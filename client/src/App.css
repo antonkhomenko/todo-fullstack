@@ -1,0 +1,14 @@
+.review-container {
+  overscroll-behaviour-inline: contain;
+}
+
+.review-container::-webkit-scrollbar {
+  background: transparent;
+  height: 12px;
+}
+
+.review-container::-webkit-scrollbar-thumb:horizontal {
+  background: gray;
+  opacity: .5;
+  border-radius: .3em;
+}
