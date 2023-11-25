@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0 mb-[8rem]">
+      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0 mb-[4rem]">
         <div className=" flex flex-col gap-y-5 items-center px-6 sm:px-8 lg:w-1/2 lg:pt-12 lg:gap-y-10 2xl:pt-14 2xl:gap-y-12">
           <motion.h1
             initial={{ opacity: 0, x: -75 }}
@@ -50,7 +50,7 @@ const Hero = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.1 }}
       >
-        <h1 className="font-black text-4xl xl:text-6xl 2xl:text-8xl text-white text-center md:max-w-[80%]">
+        <h1 className="font-black text-4xl xl:text-6xl 2xl:text-8xl text-white text-center md:max-w-[80%] px-2 md:px-0">
           Start your{" "}
           <span className="underline text-green-400">new productive life</span>{" "}
           💪 with <span className="text-sky-400">ToDo List</span> App 🤩
@@ -58,14 +58,14 @@ const Hero = () => {
       </motion.section>
       <ReviewsContainer />
       <section className="flex flex-col items-center py-8 gap-y-4">
-        <h1 className="text-white font-black 2xl:text-8xl">
-          Developed with best technology
+        <h1 className="text-white font-black text-[43px] text-center 2xl:text-8xl">
+         <span className='text-sky-500'>&lt;</span> Developed with <span className='text-green-400'>best technology</span> <span className='text-sky-500'>/&gt;</span> 
         </h1>
-        <div className="flex w-full justify-around items-center mt-7">
+        <div className="flex w-full flex-wrap justify-around items-center mt-7">
           <motion.div
             initial={{opacity: 0, x: -75}}
             whileInView={{opacity: 1, x: 0}}
-            transition={{duration: 0.3, delay: 0.4}}
+            transition={{duration: 0.2, delay: 0.2}}
             whileHover={{scale: 1.1}} 
             className="ag-courses_item golang-container react-container">
             <a href="#" className="ag-courses-item_link bg-stone-800">
@@ -83,7 +83,7 @@ const Hero = () => {
           <motion.div
             initial={{opacity: 0, x: 75}}
             whileInView={{opacity: 1, x: 0}}
-            transition={{duration: 0.3, delay: 0.4}}
+            transition={{duration: 0.2, delay: 0.2}}
             whileHover={{scale: 1.1}} 
             className="ag-courses_item golang-container">
             <a href="#" className="ag-courses-item_link bg-stone-800">

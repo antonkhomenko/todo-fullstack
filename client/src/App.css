@@ -1,5 +1,6 @@
 .review-container {
   overscroll-behaviour-inline: contain;
+  scrollbar-color: gray transparent;
 }
 
 .review-container::-webkit-scrollbar {

@@ -16,9 +16,7 @@ body {
   color: lightgray;
 }
 
-.react-container {
-  /* box-shadow: 3px -4px 35px -3px rgb(99, 102, 241) !important; */
-}
+
 
 .golang-container {
   /* box-shadow: rgba(124, 58, 237, 0.4) 5px 5px, rgba(124, 58, 237, 0.3) 10px 10px, rgba(124, 58, 237, 0.2) 15px 15px, rgba(124, 58, 237, 0.1) 20px 20px, rgba(124, 58, 237, 0.05) 25px 25px; */
@@ -90,9 +88,9 @@ body {
   transition: color .5s ease
 }
 
-.react-container {
+/* .react-container {
   background-color: var(--ract-color);
-}
+} */
 
 .golang-container-bg {
   height: 177px;
@@ -119,31 +117,11 @@ body {
   background-color: var(--ract-color);
 }
 
-/* .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
-}
-
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
-}
-
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
-} */
-
 
 
 @media only screen and (max-width: 979px) {
   .golang-container {
-    -ms-flex-preferred-size: calc(50% - 30px);
+    /* -ms-flex-preferred-size: calc(50% - 30px); */
     flex-basis: calc(50% - 30px);
   }
 
@@ -161,15 +139,18 @@ body {
 
 @media only screen and (max-width: 639px) {
   .golang-container {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
+    /* -ms-flex-preferred-size: 100%; */
+    flex-basis: 85%;
+  }
+
+  .golang-container-bg,
+  .react-container-bg {
+    height: 145px;
+    width: 170px;
   }
 
   .ag-courses-item_title {
-    min-height: 72px;
-    line-height: 1;
-
-    font-size: 24px;
+    height: 165px;
   }
 
   .ag-courses-item_link {
@@ -177,7 +158,8 @@ body {
   }
 
   .ag-courses-item_date-box {
-    font-size: 16px;
+    font-size: 26px;
+    text-align: center;
   }
 }
 
