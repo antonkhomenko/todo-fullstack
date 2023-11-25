@@ -7,8 +7,8 @@ const Hero = () => {
 
   return (
     <div>
-      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0 mb-[4rem]">
-        <div className=" flex flex-col gap-y-5 items-center px-6 sm:px-8 lg:w-1/2 lg:pt-12 lg:gap-y-10 2xl:pt-14 2xl:gap-y-12">
+      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0 mb-[2rem]">
+        <div className=" flex flex-col gap-y-5 items-center px-4 sm:px-8 lg:w-1/2 lg:pt-12 lg:gap-y-10 2xl:pt-14 2xl:gap-y-12">
           <motion.h1
             initial={{ opacity: 0, x: -75 }}
             animate={{ opacity: 1, x: 0 }}
@@ -20,7 +20,7 @@ const Hero = () => {
             the
             <span className="text-sky-400"> ToDoList </span>App
           </motion.h1>
-          <p className=" font-normal text-justify text-md sm:text-lg 2xl:w-[80%]">
+          <p className=" font-normal text-justify text-lg 2xl:w-[80%]">
             A task list app is an invaluable tool that proves exceptionally
             useful in aiding individuals to organize and manage their tasks
             effectively. By providing a structured platform for creating and
@@ -50,7 +50,7 @@ const Hero = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.1 }}
       >
-        <h1 className="font-black text-4xl xl:text-6xl 2xl:text-8xl text-white text-center md:max-w-[80%] px-2 md:px-0">
+        <h1 className="font-black text-[38px] xl:text-6xl 2xl:text-8xl text-white text-center md:max-w-[80%] px-2 md:px-0">
           Start your{" "}
           <span className="underline text-green-400">new productive life</span>{" "}
           💪 with <span className="text-sky-400">ToDo List</span> App 🤩
@@ -61,14 +61,14 @@ const Hero = () => {
         <h1 className="text-white font-black text-[43px] text-center 2xl:text-8xl">
          <span className='text-sky-500'>&lt;</span> Developed with <span className='text-green-400'>best technology</span> <span className='text-sky-500'>/&gt;</span> 
         </h1>
-        <div className="flex w-full flex-wrap justify-around items-center mt-7">
+        <div className="flex w-full flex-wrap justify-around items-center mt-7 gap-x-3">
           <motion.div
             initial={{opacity: 0, x: -75}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 0.2, delay: 0.2}}
-            whileHover={{scale: 1.1}} 
+            whileHover={{scale: 1.1}}
             className="ag-courses_item golang-container react-container">
-            <a href="#" className="ag-courses-item_link bg-stone-800">
+            <div  className="ag-courses-item_link bg-stone-800">
               <div className="golang-container-bg react-container-bg"></div>
               <div className="ag-courses-item_title">
                 <img src={reactImg} alt="react-img" className="object-contain w-full h-full" />
@@ -78,15 +78,15 @@ const Hero = () => {
                 Frontend:
                 <span className="ag-courses-item_date"> React</span>
               </div>
-            </a>
+            </div>
           </motion.div>
           <motion.div
-            initial={{opacity: 0, x: 75}}
+            initial={{opacity: 0, x: -75}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 0.2, delay: 0.2}}
-            whileHover={{scale: 1.1}} 
+            whileHover={{scale: 1.1}}
             className="ag-courses_item golang-container">
-            <a href="#" className="ag-courses-item_link bg-stone-800">
+            <div className="ag-courses-item_link bg-stone-800">
               <div className="golang-container-bg"></div>
 
               <div className="ag-courses-item_title">
@@ -97,7 +97,7 @@ const Hero = () => {
                 Backend:
                 <span className="ag-courses-item_date"> Golang</span>
               </div>
-            </a>
+            </div>
           </motion.div>
         </div>
       </section>
