@@ -3,11 +3,14 @@ import {motion} from "framer-motion"
 import ReviewsContainer from './reviewsContainer'
 import reactImg from "/src/assets/react_icon.svg"
 import goImg from "/src/assets/Go-Logo_White.svg"
+import { Link } from 'react-router-dom'
+
+
 const Hero = () => {
 
   return (
     <div>
-      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0 mb-[2rem]">
+      <div className="flex items-top flex-wrap content-stretch gap-y-5 lg:gap-y-0 mb-[2rem] xl:mb-[5rem]">
         <div className=" flex flex-col gap-y-5 items-center px-4 sm:px-8 lg:w-1/2 lg:pt-12 lg:gap-y-10 2xl:pt-14 2xl:gap-y-12">
           <motion.h1
             initial={{ opacity: 0, x: -75 }}
@@ -32,9 +35,9 @@ const Hero = () => {
             ensures that users can stay organized and on track, whether they are
             at their desk, on the move, or working remotely.
           </p>
-          <button className="self-stretch py-4 text-xl rounded-md bg-gradient-to-r from-sky-500 to-indigo-500 2xl:w-[80%] 2xl:self-center hover:bg-gradient-to-r hover:from-sky-600 hover:to-indigo-600">
+          <Link to="/login" className="self-stretch text-center py-4 text-xl rounded-md bg-gradient-to-r from-sky-500 to-indigo-500 2xl:w-[80%] 2xl:self-center hover:bg-gradient-to-r hover:from-sky-600 hover:to-indigo-600">
             Get started
-          </button>
+          </Link>
         </div>
         <div className="flex justify-stretch w-full lg:w-1/2 2xl:justify-end">
           <img

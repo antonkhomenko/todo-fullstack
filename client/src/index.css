@@ -2,6 +2,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .form-item {
+    @apply w-full text-black outline-none py-2 px-4 rounded-md text-base xl:text-lg focus:outline focus:outline-2 focus:outline-indigo-500 focus:outline-offset-2;
+  }
+  .label-item {
+    @apply w-full flex flex-col text-lg xl:text-2xl gap-y-1;
+  }
+  .submit-btn {
+    @apply w-full bg-gradient-to-r from-sky-500 to-indigo-500 rounded-md p-[10px] mt-2 text-lg xl:text-2xl font-bold hover:bg-gradient-to-r hover:from-sky-600 hover:to-indigo-600;
+  }
+
+  .password-container {
+    @apply relative flex justify-stretch  bg-white rounded-md
+  }
+
+  .password-input {
+    @apply text-black outline-none py-2 px-4 rounded-md text-base xl:text-lg w-[85%]
+  }
+
+  .password-container-focus {
+    @apply outline outline-2 outline-indigo-500 outline-offset-2
+  }
+
+  .fileInput {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    cursor: pointer;
+  }
+}
+
 :root {
   font-family: 'Roboto', sans-serif;
   --golang-color: rgb(124, 58, 237);
@@ -16,7 +51,21 @@ body {
   color: lightgray;
 }
 
+.review-container {
+  overscroll-behaviour-inline: contain;
+  scrollbar-color: gray transparent;
+}
 
+.review-container::-webkit-scrollbar {
+  background: transparent;
+  height: 12px;
+}
+
+.review-container::-webkit-scrollbar-thumb:horizontal {
+  background: gray;
+  opacity: .5;
+  border-radius: .3em;
+}
 
 .golang-container {
   /* box-shadow: rgba(124, 58, 237, 0.4) 5px 5px, rgba(124, 58, 237, 0.3) 10px 10px, rgba(124, 58, 237, 0.2) 15px 15px, rgba(124, 58, 237, 0.1) 20px 20px, rgba(124, 58, 237, 0.05) 25px 25px; */
@@ -118,6 +167,11 @@ body {
 }
 
 
+@media only screen and (max-width: 1550px) {
+  .ag-courses-item_title {
+    height: 300px;
+  }
+}
 
 @media only screen and (max-width: 979px) {
   .golang-container {
