@@ -18,6 +18,14 @@ func NewMongoDB(client *mongo.Client) *MongoDB {
 	}
 }
 
+func (mongo *MongoDB) Insert(registrationForm models.Registration) error {
+	_, err := mongo.c.InsertOne(context.TODO(), registrationForm)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 func (mongo *MongoDB) Get(loginForm models.Login) (*models.User, error) {
 	var user models.User
 	userMongo := mongo.c.FindOne(context.TODO(), bson.D{{"email", loginForm.Email}, {"password", loginForm.Password}})
